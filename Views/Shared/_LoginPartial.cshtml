@@ -1,10 +1,17 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using System.Collections.Generic;
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+
+     IdentityUser myidentity = await Task.Run(() => UserManager.GetUserAsync(User));
+    var roles = await Task.Run(() => UserManager.GetRolesAsync(myidentity));
+    
+
     <li class="nav-item">
         <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
     </li>
@@ -16,11 +23,13 @@
 }
 else
 {
+    /*
     <li class="nav-item">
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    </li>
+    </li>*/
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a  class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login"><i class="fa-solid fa-user-large"></i> Ingresar </a>
+        
     </li>
 }
 </ul>
