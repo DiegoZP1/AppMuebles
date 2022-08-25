@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj": {}
+    "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj": {
+    "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj",
         "projectName": "AppMuebles",
-        "projectPath": "c:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj",
+        "projectPath": "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\obj\\",
+        "outputPath": "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
