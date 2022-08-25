@@ -300,6 +300,7 @@ C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\Microsoft.Enti
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\Npgsql.dll
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\AppMuebles.pdb
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\appsettings.json
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\bin\Debug\net6.0\AppMuebles.staticwebassets.runtime.json
@@ -560,6 +561,5 @@ C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\scopedcss\proj
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\AppMuebles.csproj.CopyComplete
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\AppMuebles.dll
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\refint\AppMuebles.dll
-C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\AppMuebles.pdb
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\AppMuebles.genruntimeconfig.cache
 C:\Users\Diego\Videos\appmuebles_S1.0\AppMuebles\obj\Debug\net6.0\ref\AppMuebles.dll
