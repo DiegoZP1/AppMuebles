@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'AppMuebles'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6c77d822caa646b2ae9ec96d74fac3ef }}
-          package: 
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6f2e3b8a5ad24193ac3f6d2d0833a9cc }}
+          package: .
