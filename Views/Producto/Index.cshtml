@@ -8,7 +8,7 @@
 
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html"> TEAM HUAWEI</a>
+           <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> TEAM HUAWEI</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -60,9 +60,9 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Usuarios
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                <a class="nav-link text-warning" asp-area="" asp-controller="Producto" asp-action="Index"><strong>Productos</strong> </a>
+                            <a class="nav-link"  asp-area="" asp-controller="Producto" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"> </i></div>
+                               Productos
                             </a>
                             </div>
 
@@ -80,39 +80,39 @@
 
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Crear nuevo Producto</a>
 </p>
-<table class="table">
+<table class="table table-striped table-hover">
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.EstadoMue)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Descripcion)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Precio)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.categoria)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.marca)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.color)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.PorcentajeDesc)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Imagen)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Status)
             </th>
             <th></th>
@@ -152,9 +152,9 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
             </td>
         </tr>
 }

@@ -10,7 +10,7 @@
 
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html"> TEAM HUAWEI</a>
+            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> TEAM HUAWEI</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -62,9 +62,9 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Usuarios
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                <a class="nav-link text-warning" asp-area="" asp-controller="Producto" asp-action="Index"><strong>Productos</strong> </a>
+                            <a class="nav-link"  asp-area="" asp-controller="Producto" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"> </i></div>
+                               Productos
                             </a>
                             </div>
 
