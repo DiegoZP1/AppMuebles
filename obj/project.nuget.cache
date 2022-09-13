@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ViuBH+y6rbzGVxcvbgEUWcOaaioIDFWO2zJ9uFv8yqjnLnRrVeudAZuMOcGIpvYGelJjFrwiTYf8v71l35ERA==",
+  "dgSpecHash": "p0ZPDkq5ozoBt2qzbtcltLNTS5rFcY+0p4DiWuS7KM94yUir6joksLV5GTgWZ/azx8BTJtquS3/JdMbqrrHcuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\Videos\\appmuebles_S1.0\\AppMuebles\\AppMuebles.csproj",
+  "projectFilePath": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\AppMuebles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
