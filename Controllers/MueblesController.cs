@@ -1,11 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using AppMuebles.Models;
 using AppMuebles.Data;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace AppMuebles.Controllers
 {
@@ -13,13 +18,14 @@ namespace AppMuebles.Controllers
     {
         private readonly ILogger<MueblesController> _logger;
         private readonly ApplicationDbContext _context;
+       private readonly UserManager<IdentityUser> _userManager;
     
 
-        public MueblesController(ApplicationDbContext context,ILogger<MueblesController> logger)
+        public MueblesController(ApplicationDbContext context,ILogger<MueblesController> logger,UserManager<IdentityUser> userManager)
         {
             _context = context;
             _logger = logger;
-        
+            _userManager = userManager;
         }
 
          public async Task<IActionResult> Index(string? searchString)
@@ -46,6 +52,29 @@ namespace AppMuebles.Controllers
         
             return View(objProduct);
         }
+
+         public async Task<IActionResult> Add(int? id){
+            var userID = _userManager.GetUserName(User);
+            if(userID == null){
+                ViewData["Message"] = "Por favor debe loguearse antes de agregar un producto";
+                List<Muebles> productos = new List<Muebles>();
+                return  View("Index",productos);
+            }else{
+                var producto = await _context.DataMuebles.FindAsync(id);
+
+                
+                Proforma proforma = new Proforma();
+                proforma.Producto = producto;
+                proforma.Precio = producto.Precio;
+                proforma.Cantidad = 1;
+                proforma.UserID = userID;
+                _context.Add(proforma);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+        }
+
 
 
     }

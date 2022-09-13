@@ -10,4 +10,5 @@ public class ApplicationDbContext : IdentityDbContext
     {   
     }
     public DbSet<AppMuebles.Models.Muebles> DataMuebles {get ;set; }
+    public DbSet<AppMuebles.Models.Proforma> DataProformas {get ;set; }
 }
