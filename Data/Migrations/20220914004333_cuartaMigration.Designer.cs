@@ -3,6 +3,7 @@ using System;
 using AppMuebles.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AppMuebles.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220914004333_cuartaMigration")]
+    partial class cuartaMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,36 +23,6 @@ namespace AppMuebles.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("AppMuebles.Models.DetallePedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("pedidoID")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ProductoId");
-
-                    b.HasIndex("pedidoID");
-
-                    b.ToTable("t_order_detail");
-                });
 
             modelBuilder.Entity("AppMuebles.Models.Muebles", b =>
                 {
@@ -144,36 +116,6 @@ namespace AppMuebles.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("t_pago");
-                });
-
-            modelBuilder.Entity("AppMuebles.Models.Pedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("UserID")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("pagoId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("pagoId");
-
-                    b.ToTable("t_order");
                 });
 
             modelBuilder.Entity("AppMuebles.Models.Proforma", b =>
@@ -407,36 +349,6 @@ namespace AppMuebles.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("AppMuebles.Models.DetallePedido", b =>
-                {
-                    b.HasOne("AppMuebles.Models.Muebles", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AppMuebles.Models.Pedido", "pedido")
-                        .WithMany()
-                        .HasForeignKey("pedidoID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Producto");
-
-                    b.Navigation("pedido");
-                });
-
-            modelBuilder.Entity("AppMuebles.Models.Pedido", b =>
-                {
-                    b.HasOne("AppMuebles.Models.Pago", "pago")
-                        .WithMany()
-                        .HasForeignKey("pagoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("pago");
                 });
 
             modelBuilder.Entity("AppMuebles.Models.Proforma", b =>
