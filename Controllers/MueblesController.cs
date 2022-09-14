@@ -58,7 +58,7 @@ namespace AppMuebles.Controllers
             if(userID == null){
                 ViewData["Message"] = "Por favor debe loguearse antes de agregar un producto";
                 List<Muebles> productos = new List<Muebles>();
-                return  View("Index",productos);
+                return  View("Logearse",productos);
             }else{
                 var producto = await _context.DataMuebles.FindAsync(id);
 

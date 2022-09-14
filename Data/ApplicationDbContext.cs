@@ -11,4 +11,9 @@ public class ApplicationDbContext : IdentityDbContext
     }
     public DbSet<AppMuebles.Models.Muebles> DataMuebles {get ;set; }
     public DbSet<AppMuebles.Models.Proforma> DataProformas {get ;set; }
+
+    public DbSet<AppMuebles.Models.Pago> DataPago {get ;set; }
+    public DbSet<AppMuebles.Models.Pedido> DataPedido {get ;set; }
+
+    public DbSet<AppMuebles.Models.DetallePedido> DataDetallePedido {get ;set; }
 }

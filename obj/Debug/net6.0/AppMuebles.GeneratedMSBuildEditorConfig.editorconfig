@@ -99,6 +99,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Muebles/logearse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xsb2dlYXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Pago/Confirmacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDb25maXJtYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Pago/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Pago/Reportes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xSZXBvcnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -129,6 +145,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Proformas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Proformas/Prueba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXFBydWViYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Diego/Videos/appmuebles_S2.0/AppMuebles/Views/Shared/Error.cshtml]

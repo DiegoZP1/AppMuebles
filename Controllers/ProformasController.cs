@@ -48,17 +48,36 @@ namespace AppMuebles.Controllers
              return View(model);
         }
 
+          public async Task<IActionResult> Prueba(){
+           /* var producto  = Util.SessionExtensions.Get<Producto>(HttpContext.Session,"Producto");*/
+
+
+            var  userID = _userManager.GetUserName(User);
+            var items = from o in _context.DataProformas select o;
+            items = items.Include(p => p.Producto).Where(w => w.UserID.Equals(userID) && w.Status.Equals("Pendiente"));
+
+            var carrito = await items.ToListAsync();
+            var total= carrito.Sum(c => c.Cantidad * c.Precio);
+
+            dynamic model = new ExpandoObject();
+            model.montoTotal  = total *2;
+            model.elementosCarrito = carrito;
+
+             return View(model);
+        }
+
 
 //ELIMINAR
 
-            public async Task<IActionResult> Delete(int? id)
+           public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var produto = await _context.DataProformas.FirstOrDefaultAsync(m => m.id == id);
+            var produto = await _context.DataProformas
+                .FirstOrDefaultAsync(m => m.id == id);
             if (produto == null)
             {
                 return NotFound();
@@ -82,27 +101,30 @@ namespace AppMuebles.Controllers
 
 //EDITAR
 
-     // GET: Proforma/Edit/5
+        // GET: Producto/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null )
             {
                 return NotFound();
             }
 
-            var proforma = await _context.DataProformas.FindAsync(id);
-            if (proforma == null)
+            var muebles = await _context.DataProformas.FindAsync(id);
+            if (muebles == null)
             {
                 return NotFound();
             }
-            return View(proforma);
+            return View(muebles);
         }
 
+        // POST: Producto/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Cantidad,Precio,UserID")] Proforma proforma)
+        public async Task<IActionResult> Edit(int id, [Bind("id,UserID,Producto,Cantidad,Precio,Status")] Proforma muebles)
         {
-            if (id != proforma.id)
+            if (id != muebles.id)
             {
                 return NotFound();
             }
@@ -111,12 +133,12 @@ namespace AppMuebles.Controllers
             {
                 try
                 {
-                    _context.Update(proforma);
+                    _context.Update(muebles);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProformaExists(proforma.id))
+                    if (!ProformaExists(muebles.id))
                     {
                         return NotFound();
                     }
@@ -127,14 +149,8 @@ namespace AppMuebles.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(proforma);
+            return View(muebles);
         }
-
-
-
-
-
-
 
         private bool ProformaExists(int id)
         {

@@ -84,9 +84,10 @@
 <h1>@ViewData["Title"]</h1>
 
 <a class="btn btn-primary" asp-controller="Pago" 
-        asp-action="Create" asp-route-monto="@montoTotal">Pagar</a><p>Total S/. @montoTotal</p>
+        asp-action="Create" asp-route-monto="@montoTotal">Pagar</a>
+        <br><br><br><br>
 
-<table class="table">
+<table class="table table-striped table-dark">
     <thead class="thead-dark">
         <tr>
             <th scope="col">
@@ -121,6 +122,8 @@
 }
     </tbody>
 </table>
+
+<h3>Total S/. @montoTotal</h3>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 

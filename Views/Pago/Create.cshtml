@@ -1,14 +1,7 @@
-
-@model AppMuebles.Models.Proforma
-
+@model AppMuebles.Models.Pago
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Pago";
 }
-
-
-
-
-
 
 
          <!-- ======= Top Bar ======= -->
@@ -16,13 +9,14 @@
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com" class="text-warning">huaweiteam_muebles@gmail.com</a>
-        <i class="text-dark bi bi-phone-fill phone-icon"></i> +51 99776622365
+        <i class="text-dark bi bi-phone-fill phone-icon"></i> +51 9977664412
       </div>
       <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto ">Contactarnos  </a>
+        <a href="#about" class="scrollto ">Contactarnos</a>
       </div>
     </div>
   </div>
+
 
 
 <header id="header" class="fixed-top d-flex align-items-center ">
@@ -32,7 +26,7 @@
 
       <nav id="navbar" class="navbar">
            <ul>
-                <li><a class="nav-link scrollto active text-warning" href="#hero"> <strong>Home</strong> </a></li>
+                <li><a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> </a></li>
                 <li><a class="nav-link scrollto text-warning" href="#portfolio"><strong> Portafolio</strong></a></li>
                 <li class="nav-item">
                 <a class="nav-link text-warning" asp-area="" asp-controller="Muebles" asp-action="Index">Muebles</a>
@@ -60,11 +54,6 @@
                               </ul>
                         </li>
                  <li><a class="nav-link scrollto text-warning" href="#contact"><strong>Contactanos</strong></a></li>
-                 <li class="nav-item">
-                        <a class="nav-link text-warning" asp-area="" asp-controller="Proformas" asp-action="Index"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                        </svg></a>
-                        </li>
                  <li><partial name="_MenuPartial" /></li>
                  <li><partial name="_LoginPartial" /></li>
                  <li class="nav-item">
@@ -82,46 +71,114 @@
     </div>
   </header><!-- End Header -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
+    
 
-<h1>Cantidads</h1>
-
-<h4>Proforma</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="id" />
-            <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
-                <input asp-for="Cantidad" class="form-control" />
-                <span asp-validation-for="Cantidad" class="text-danger"></span>
-            </div>
-             <div class="form-group">
-                <input type="submit" value="Save" asp-action="Prueba" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index" class="btn btn-info">Volver atras</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
-
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br>
 
 
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contenedor">
+
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div class="logo-marca" id="logo-marca">
+					<img src="~/assets/img/logos/visa.png" alt=""> 
+				</div>
+				<img src="~/assets/img/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">Diego Zamalloa</p>
+						</div>
+
+						<div class="grupo" id="expiracion">
+							<p class="label">Expiracion</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+				<a href="#" class="link-banco">www.tubanco.com</a>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form asp-controller="Pago" asp-action="Pagar" id="formulario-tarjeta" class="formulario-tarjeta">
+            <input type="hidden" asp-for="UserID"/>
+            <input type="hidden" asp-for="MontoTotal" class="form-control" data-thousands="," data-decimal="." />
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+                <input asp-for="NumeroTarjeta" class="form-control" data-inputmask="'mask': '9999-9999-9999-9999'" />
+				 
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				 <input asp-for="NombreTarjeta" class="form-control" id="inputNombre" maxlength="19" autocomplete="off"/>
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="inputExpira">Vencimiento</label>
+					 <input asp-for="DueDateYYMM" class="form-control" data-inputmask="'mask': '99/99', 'placeholder': 'yy/mm'" />
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					 <input asp-for="Cvv" class="form-control" data-inputmask="'mask': '999', 'placeholder': '999'" />
+				</div>
+			</div>
+            
+			<button type="submit" class="btn-enviar">Pagar</button>
+            
+            <br><br>
+            <a class="btn btn-danger btn-lg btn-block" asp-area="" asp-controller="Home" asp-action="Index"> Cancelar Compra</a>
+		</form>
+	</div>
