@@ -16,4 +16,6 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<AppMuebles.Models.Pedido> DataPedido {get ;set; }
 
     public DbSet<AppMuebles.Models.DetallePedido> DataDetallePedido {get ;set; }
+    public DbSet<AppMuebles.Models.Contacto> DataContacto {get ;set; }
+    public DbSet<AppMuebles.Models.RespuestaContacto> DataRespuesta {get ;set; }
 }

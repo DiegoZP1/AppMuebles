@@ -3,6 +3,7 @@ using System;
 using AppMuebles.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AppMuebles.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220926162446_septimaMigration")]
+    partial class septimaMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -241,32 +243,6 @@ namespace AppMuebles.Data.Migrations
                     b.HasIndex("ProductoId");
 
                     b.ToTable("t_proforma");
-                });
-
-            modelBuilder.Entity("AppMuebles.Models.RespuestaContacto", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("ContactoId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Respuesta")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("RespuestatDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ContactoId");
-
-                    b.ToTable("t_resp_contact");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -508,17 +484,6 @@ namespace AppMuebles.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Producto");
-                });
-
-            modelBuilder.Entity("AppMuebles.Models.RespuestaContacto", b =>
-                {
-                    b.HasOne("AppMuebles.Models.Contacto", "Contacto")
-                        .WithMany()
-                        .HasForeignKey("ContactoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Contacto");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
