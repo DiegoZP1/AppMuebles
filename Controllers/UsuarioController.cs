@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using AppMuebles.Data;
 using AppMuebles.Models;
-
+using AppMuebles.Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 
 
 
@@ -20,15 +20,24 @@ namespace AppMuebles.Controllers
     {
         private readonly ILogger<UsuarioController> _logger;
 
-        public UsuarioController(ILogger<UsuarioController> logger)
+        private readonly ApplicationDbContext _context;
+
+        private readonly UserManager<IdentityUser> _userManager;
+        public UsuarioController(ApplicationDbContext context, ILogger<UsuarioController> logger ,UserManager<IdentityUser> userManager)
         {
+           _context = context;
             _logger = logger;
+            _userManager = userManager;
         }
 
-        public IActionResult Index()
+        
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+        var applicationDbContext = _context.DataProformas.Include(c => c.Producto);            
+        return View(await applicationDbContext.ToListAsync());
         }
+
 
        
     }

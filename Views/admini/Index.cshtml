@@ -50,7 +50,7 @@
                             
                             <div class="sb-sidenav-menu-heading">Reportes</div>
                         
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link"  asp-area="" asp-controller="Usuario" asp-action="Index">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Usuarios
                             </a>
@@ -58,6 +58,18 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"> </i></div>
                                Productos
                             </a>
+                             <a class="nav-link"  asp-area="" asp-controller="Contacto" asp-action="Listar">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"> </i></div>
+                               Contactos
+                            </a>
+                            <a class="nav-link"  asp-area="" asp-controller="Proformas" asp-action="Listar">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"> </i></div>
+                               Compras Realizadas
+                            </a>
+
+
+
+
                             </div>
 
 

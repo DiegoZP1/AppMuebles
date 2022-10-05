@@ -1,14 +1,10 @@
-@model IEnumerable<AppMuebles.Models.Muebles>
-
-@{
-    ViewData["Title"] = "Index";
-}
+@model IEnumerable<AppMuebles.Models.Contacto>
 
 
 
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-           <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> TEAM HUAWEI</a>
+            <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> TEAM HUAWEI</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -56,7 +52,8 @@
                             
                             <div class="sb-sidenav-menu-heading">Reportes</div>
                         
-                               <a class="nav-link"  asp-area="" asp-controller="Usuario" asp-action="Index">
+                            
+                            <a class="nav-link"  asp-area="" asp-controller="Usuario" asp-action="Index">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Usuarios
                             </a>
@@ -73,6 +70,7 @@
                                Compras Realizadas
                             </a>
 
+
                             </div>
 
 
@@ -86,44 +84,52 @@
             </div>
             <div id="layoutSidenav_content">
 
+<br><br>
+ <form asp-controller="Contacto" asp-action="Listar">
+    <p>
+        Nombre: <input type="text" name="searchString">
+        <input type="submit" value="Filter">
+    </p>
+    </form>
+<br>
+ <form asp-controller="Contacto" asp-action="ListarCorreo">
+    <p>
+        Email: <input type="text" name="searchEmail">
+        <input type="submit" value="Filter">
+    </p>
+    </form>
+<br>
+ <form asp-controller="Contacto" asp-action="ListarNumero">
+    <p>
+        Numero de Celular: <input type="text" name="searchEmail">
+        <input type="submit" value="Filter">
+    </p>
+    </form>
+<br>
 
-
-<p>
-    <a class="btn btn-primary" asp-action="Create">Crear nuevo Producto</a>
-</p>
-<table class="table table-striped table-hover">
+<table class="table">
     <thead>
         <tr>
-            <th scope="col">
+            <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.EstadoMue)
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.Descripcion)
+            <th>
+               @Html.DisplayNameFor(model => model.Numero)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.Precio)
+            <th>
+               @Html.DisplayNameFor(model => model.Asunto)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.categoria)
+            <th>
+                @Html.DisplayNameFor(model => model.Mensaje)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.marca)
+            <th>
+                Estado
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.color)
-            </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.PorcentajeDesc)
-            </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.Imagen)
-            </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
+            
+        
             <th></th>
         </tr>
     </thead>
@@ -134,28 +140,16 @@
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EstadoMue)
+                @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
+                @Html.DisplayFor(modelItem => item.Numero)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Precio)
+                @Html.DisplayFor(modelItem => item.Asunto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.categoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.marca)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.color)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PorcentajeDesc)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Imagen)
+                @Html.DisplayFor(modelItem => item.Mensaje)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
@@ -169,6 +163,7 @@
 }
     </tbody>
 </table>
+
 
 
 
@@ -188,3 +183,8 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
