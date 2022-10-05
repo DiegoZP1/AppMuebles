@@ -96,9 +96,22 @@
             <input type="hidden"  asp-for="Mensaje" class="form-control" />
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                
+
+
+
+                <select asp-for="Status" class="form-control" >
+                            <option value="Pendiente">PENDIENTE</option>
+                            <option value="LEIDO">LEIDO</option>
+                            <option value="CONTESTADO">CONTESTADO</option>
+                </select>
+
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
+
+
+
+             
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
