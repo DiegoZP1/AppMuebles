@@ -152,6 +152,36 @@ namespace AppMuebles.Controllers
             return View(muebles);
         }
 
+
+        public async Task<IActionResult> Listar(string? searchString)
+        {
+            
+            var muebles = from o in _context.DataProformas select o;
+            //SELECT * FROM t_productos -> &
+            if(!String.IsNullOrEmpty(searchString)){
+                muebles = muebles.Where(s => s.Producto.Nombre.Contains(searchString)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+            muebles = muebles.Where(s => s.Status.Contains("PROCESADO"));
+            
+            return View(await muebles.ToListAsync());
+        }
+
+          public async Task<IActionResult> ListarUsuario(string? searchString)
+        {
+            
+            var muebles = from o in _context.DataProformas select o;
+            //SELECT * FROM t_productos -> &
+            if(!String.IsNullOrEmpty(searchString)){
+                muebles = muebles.Where(s => s.UserID.Contains(searchString)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+            muebles = muebles.Where(s => s.Status.Contains("PROCESADO"));
+            
+            return View(await muebles.ToListAsync());
+        }
+
+
         private bool ProformaExists(int id)
         {
             return _context.DataProformas.Any(e => e.id == id);

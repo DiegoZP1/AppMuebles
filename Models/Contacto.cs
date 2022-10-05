@@ -22,9 +22,18 @@ namespace AppMuebles.Models
         public string Nombre {get; set; }
         [Column("email")]
         public string Email {get; set; }
+
+        [Column("numero")]
+        public string Numero {get; set; }
+
         [Column("asunto")]
         public string Asunto {get; set; }
+
+
+
         [Column("mensj")]
         public string Mensaje {get; set; }
+        [Column("estado")]
+        public String Status{ get; set;}="Pendiente";
     }
 }
