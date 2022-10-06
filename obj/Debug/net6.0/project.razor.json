@@ -16463,6 +16463,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\Views\\Muebles\\Prueba.cshtml",
+      "TargetPath": "Views\\Muebles\\Prueba.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\Views\\Pago\\Create.cshtml",
       "TargetPath": "Views\\Pago\\Create.cshtml",
       "FileKind": "mvc"
