@@ -32,7 +32,8 @@ namespace AppMuebles.Controllers
 
 
             [HttpGet]
-         public async Task<IActionResult> Index(string? searchString ,string? Search ,string? Color,string? Categoria)
+
+         public async Task<IActionResult> Index(string? searchString )
 
         {
             
@@ -43,21 +44,7 @@ namespace AppMuebles.Controllers
                 // & + WHERE name like '%ABC%'
             }
 
-            if(!String.IsNullOrEmpty(Search)){
-                muebles = muebles.Where(s => s.EstadoMue.Contains(Search)); //Algebra de bool
-                // & + WHERE name like '%ABC%'
-            }
-
-
-            if(!String.IsNullOrEmpty(Color)){
-                muebles = muebles.Where(s => s.color.Contains(Color)); //Algebra de bool
-                // & + WHERE name like '%ABC%'
-            }
-
-            if(!String.IsNullOrEmpty(Categoria)){
-                muebles = muebles.Where(s => s.categoria.Contains(Categoria)); //Algebra de bool
-                // & + WHERE name like '%ABC%'
-            }
+           
 
             muebles = muebles.Where(s => s.Status.Contains("Activo"));
             
