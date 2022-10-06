@@ -10,7 +10,7 @@ using AppMuebles.Models;
 using AppMuebles.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-
+using Newtonsoft.Json;
 
 namespace AppMuebles.Controllers
 {
@@ -19,6 +19,7 @@ namespace AppMuebles.Controllers
         private readonly ILogger<MueblesController> _logger;
         private readonly ApplicationDbContext _context;
        private readonly UserManager<IdentityUser> _userManager;
+       public string baseUrl = "https://filtrobusquedamuebles.azurewebsites.net/api/";
     
 
         public MueblesController(ApplicationDbContext context,ILogger<MueblesController> logger,UserManager<IdentityUser> userManager)
@@ -29,8 +30,10 @@ namespace AppMuebles.Controllers
         }
 
 
+
             [HttpGet]
          public async Task<IActionResult> Index(string? searchString ,string? Search ,string? Color,string? Categoria)
+
         {
             
             var muebles = from o in _context.DataMuebles select o;
@@ -62,9 +65,51 @@ namespace AppMuebles.Controllers
         }
 
 
-        
-        
+         [HttpPost]
+        public async Task<IActionResult> Index(IFormFile busqueda)
+        {
+            var oLista = new List<Muebles>();
+            var byte_imagen = new byte[10000];
+            try
+            {
+                if (busqueda.Length > 0)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        busqueda.CopyTo(ms);
+                        byte_imagen = ms.ToArray();
+                    }
+                }
+            }
+            catch
+            {
+                ViewBag.Message = "No se ha subido el archivo correctamente";
+                return View(oLista);
+            }
 
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Accept.Clear();
+                using (var multipartFormContent = new MultipartFormDataContent())
+                {
+                    var fileStreamContent = new StreamContent(new MemoryStream(byte_imagen));
+                    multipartFormContent.Add(fileStreamContent, name: "busqueda", fileName: busqueda.FileName);
+                    HttpResponseMessage getData = await client.PostAsync("SearchAllMueblesImage?code=4PjBjTx9i7m907p2s6l9gdxXs2YV1T0g_5NShN35cHgqAzFuH6vMeA==", multipartFormContent);
+                    if (getData.IsSuccessStatusCode)
+                    {
+                        var jsonString = getData.Content.ReadAsStringAsync();
+                        jsonString.Wait();
+                        oLista = JsonConvert.DeserializeObject<List<Muebles>>(jsonString.Result);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error en la API");
+                    }
+                }
+            }
+            return View(oLista);
+        }
 
          public async Task<IActionResult> Details(int? id)
         {
