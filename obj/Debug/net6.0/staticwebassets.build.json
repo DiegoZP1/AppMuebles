@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FJjrw3EtoXf6xXmLImqR2CeJGqGZhfQ1Aw8RcT6+9T4=",
+  "Hash": "HZrAu5LWHxej+Mb97ISU8aZ0zvKHiTkyrkRADJ3fZdw=",
   "Source": "AppMuebles",
   "BasePath": "_content/AppMuebles",
   "Mode": "Default",
@@ -1766,6 +1766,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\Muebles\\mueble1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\wwwroot\\assets\\img\\Muebles\\mueble10.jpg",
+      "SourceId": "AppMuebles",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\wwwroot\\",
+      "BasePath": "_content/AppMuebles",
+      "RelativePath": "assets/img/Muebles/mueble10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\Muebles\\mueble10.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\wwwroot\\assets\\img\\Muebles\\mueble11.jpg",
+      "SourceId": "AppMuebles",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\wwwroot\\",
+      "BasePath": "_content/AppMuebles",
+      "RelativePath": "assets/img/Muebles/mueble11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\Muebles\\mueble11.jpg"
     },
     {
       "Identity": "C:\\Users\\Diego\\Videos\\appmuebles_S2.0\\AppMuebles\\wwwroot\\assets\\img\\Muebles\\mueble2.jpg",
