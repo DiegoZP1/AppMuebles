@@ -28,19 +28,43 @@ namespace AppMuebles.Controllers
             _userManager = userManager;
         }
 
-         public async Task<IActionResult> Index(string? searchString)
+
+            [HttpGet]
+         public async Task<IActionResult> Index(string? NOMBRE ,string? Search ,string? Color,string? Categoria)
         {
             
             var muebles = from o in _context.DataMuebles select o;
             //SELECT * FROM t_productos -> &
-            if(!String.IsNullOrEmpty(searchString)){
-                muebles = muebles.Where(s => s.Nombre.Contains(searchString)); //Algebra de bool
+            if(!String.IsNullOrEmpty(NOMBRE)){
+                muebles = muebles.Where(s => s.Nombre.Contains(NOMBRE)); //Algebra de bool
                 // & + WHERE name like '%ABC%'
             }
+
+            if(!String.IsNullOrEmpty(Search)){
+                muebles = muebles.Where(s => s.EstadoMue.Contains(Search)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+
+
+            if(!String.IsNullOrEmpty(Color)){
+                muebles = muebles.Where(s => s.color.Contains(Color)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+
+            if(!String.IsNullOrEmpty(Categoria)){
+                muebles = muebles.Where(s => s.categoria.Contains(Categoria)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+
             muebles = muebles.Where(s => s.Status.Contains("Activo"));
             
             return View(await muebles.ToListAsync());
         }
+
+
+        
+        
+
 
          public async Task<IActionResult> Details(int? id)
         {
