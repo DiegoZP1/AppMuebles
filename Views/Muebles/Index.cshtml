@@ -82,13 +82,83 @@
 
         </header>
         <!-- Section-->
+@using (Html.BeginForm("Index", "Muebles", FormMethod.Get))
+{ 
+  <div class="col-md-3">
+    <label>Nombre:</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" name="searchString" placeholder="Iniciar búsqueda" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+      </div>
+    </div>
+  </div>
+}
 
-    <form asp-controller="Muebles" asp-action="Index">
-    <p>
-        Nombre: <input type="text" name="searchString">
-        <input type="submit" value="Filter">
+@using (Html.BeginForm("Index", "Muebles", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+  <div class="col-md-3">
+    <div class="input-group mb-3">
+      <input type="file" name="busqueda" class="form-control" accept=".png, .jpg, .jpeg" placeholder="Iniciar busqueda" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+      </div>
+    </div>
+  </div>
+}
+
+<section class="py-5">
+@{
+  if (ViewBag.Message != null)
+  {
+    <p class="text-danger mt-4" style="font-size: ;20px">* @ViewBag.Message
     </p>
-    </form>
+  }
+}
+  <div class="container px-4 px-lg-5 mt-5">
+  @{
+    if (Model.Count() == 0)
+
+    {
+      <div class="alert alert-info text-center" role="alert">
+        No se han encontrado resultados
+      </div>
+    }
+  }
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+      @foreach (var item in Model)
+      {
+
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+          <img class="card-img-top" src="~/assets/img/Muebles/@item.Imagen" alt="..." />
+            <!-- Product details-->
+          <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+              <h5 class="fw-bolder">@Html.DisplayFor(modelItem => item.Nombre)</h5>
+                <!-- Product price-->
+              <p class="fw">s/. @Html.DisplayFor(modelItem => item.Precio)</p>
+
+              </div>
+            </div>
+            <!-- Ver Producto-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-action="Details"
+                asp-route-id="@item.Id">Ver Mueble</a></div>
+            </div>
+            <!-- Añadir al carro-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-action="Add"
+                asp-route-id="@item.Id">Añadir al carro</a></div>
+            </div>
+
+          </div>
+
+        </div>
+
 
     
         <section class="py-5">
@@ -128,6 +198,7 @@
                     </div>
 
                 }
+
 
 
             
