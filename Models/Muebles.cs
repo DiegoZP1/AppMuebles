@@ -34,5 +34,8 @@ namespace AppMuebles.Models
         public string Imagen {get; set; }
         [Column("status")]
         public string Status {get; set; }
+
+        [Column("model3D")]
+        public string model3D {get; set; }
     }
 }
