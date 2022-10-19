@@ -19,7 +19,7 @@ namespace AppMuebles.Controllers
         private readonly ILogger<MueblesController> _logger;
         private readonly ApplicationDbContext _context;
        private readonly UserManager<IdentityUser> _userManager;
-       public string baseUrl = "https://filtrobusquedamuebles.azurewebsites.net/api/";
+       public string baseUrl = "https://filtrodebusquedaimage.azurewebsites.net/api/";
     
 
         public MueblesController(ApplicationDbContext context,ILogger<MueblesController> logger,UserManager<IdentityUser> userManager)
@@ -88,7 +88,7 @@ namespace AppMuebles.Controllers
                 {
                     var fileStreamContent = new StreamContent(new MemoryStream(byte_imagen));
                     multipartFormContent.Add(fileStreamContent, name: "busqueda", fileName: busqueda.FileName);
-                    HttpResponseMessage getData = await client.PostAsync("SearchAllMueblesImage?code=4PjBjTx9i7m907p2s6l9gdxXs2YV1T0g_5NShN35cHgqAzFuH6vMeA==", multipartFormContent);
+                    HttpResponseMessage getData = await client.PostAsync("SearchAllMueblesImage?code=6GnNf_xgD-gaXqKYNf2GRVLANduKNNEsqNgj4ct2WKL3AzFuD-VwUA==", multipartFormContent);
                     if (getData.IsSuccessStatusCode)
                     {
                         var jsonString = getData.Content.ReadAsStringAsync();
