@@ -56,7 +56,7 @@ namespace AppMuebles.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,EstadoMue,Descripcion,Precio,categoria,marca,color,PorcentajeDesc,Imagen,Status")] Muebles muebles)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,EstadoMue,Descripcion,Precio,categoria,marca,color,PorcentajeDesc,Imagen,Status,model3D")] Muebles muebles)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace AppMuebles.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,EstadoMue,Descripcion,Precio,categoria,marca,color,PorcentajeDesc,Imagen,Status")] Muebles muebles)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,EstadoMue,Descripcion,Precio,categoria,marca,color,PorcentajeDesc,Imagen,Status,model3D")] Muebles muebles)
         {
             if (id != muebles.Id)
             {
