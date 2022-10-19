@@ -17,7 +17,7 @@
 <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><img src="assets/img/logo_pag.jpg" alt=""></a></h1>
+      <h1 class="logo"><a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index"> <img src="assets/img/logo_pag.jpg" alt=""></a></h1>
 
       <nav id="navbar" class="navbar">
            <ul>
@@ -31,23 +31,7 @@
 
           
 
-                      <li class="dropdown text-warning"><a href="#"><span><strong>Paginas</strong></span> <i class="bi bi-chevron-down"></i></a>
-                              <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                        <ul>
-                                          <li><a href="#">Deep Drop Down 1</a></li>
-                                          <li><a href="#">Deep Drop Down 2</a></li>
-                                          <li><a href="#">Deep Drop Down 3</a></li>
-                                          <li><a href="#">Deep Drop Down 4</a></li>
-                                          <li><a href="#">Deep Drop Down 5</a></li>
-                                        </ul>
-                                    </li>
-                                  <li><a href="#">Drop Down 2</a></li>
-                                  <li><a href="#">Drop Down 3</a></li>
-                                  <li><a href="#">Drop Down 4</a></li>
-                              </ul>
-                        </li>
+                     
                  <li><a class="nav-link scrollto text-warning" href="#contact"><strong>Contactanos</strong></a></li>
                  <li><partial name="_MenuPartial" /></li>
                  <li><partial name="_LoginPartial" /></li>
@@ -69,7 +53,7 @@
     
 
 <br>
-
+<br><br><br>
 
 
  <!-- Product section-->
@@ -99,6 +83,98 @@
                                     <input type="submit" value="AÑADIR" class="btn btn-outline-dark"/>        
                                 </form>
                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Related items section-->
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Productos Relacionados</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/assets/img/Muebles/mueble2.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sofa Vicenza </h5>
+                                    <!-- Product price-->
+                                    s/.840
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >                             
+                                <div class="text-center"><a  class="btn btn-outline-dark mt-auto"  href="https://appmuebles.azurewebsites.net/Muebles/Details/5">Ver Mueble</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                           
+                            <!-- Product image-->
+                             <img class="card-img-top" src="~/assets/img/Muebles/mueble3.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sofa Sima</h5>
+                                   
+                                    <!-- Product price-->
+                                    s/. 950
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >                             
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto"  href="https://appmuebles.azurewebsites.net/Muebles/Details/6">Ver Mueble</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/assets/img/Muebles/mueble4.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sofa Tramoti</h5>
+                                    <!-- Product price-->
+                                    
+                                    s/. 800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >                             
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto"  href="https://appmuebles.azurewebsites.net/Muebles/Details/7">Ver Mueble</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                             <img class="card-img-top" src="~/assets/img/Muebles/mueble5.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sofa Toscana</h5>
+                                  
+                                    s/. 950
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >                             
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://appmuebles.azurewebsites.net/Muebles/Details/4">Ver Mueble</a></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

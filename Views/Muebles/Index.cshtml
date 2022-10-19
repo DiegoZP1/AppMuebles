@@ -31,23 +31,7 @@
 
           
 
-                      <li class="dropdown text-warning"><a href="#"><span><strong>Paginas</strong></span> <i class="bi bi-chevron-down"></i></a>
-                              <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                        <ul>
-                                          <li><a href="#">Deep Drop Down 1</a></li>
-                                          <li><a href="#">Deep Drop Down 2</a></li>
-                                          <li><a href="#">Deep Drop Down 3</a></li>
-                                          <li><a href="#">Deep Drop Down 4</a></li>
-                                          <li><a href="#">Deep Drop Down 5</a></li>
-                                        </ul>
-                                    </li>
-                                  <li><a href="#">Drop Down 2</a></li>
-                                  <li><a href="#">Drop Down 3</a></li>
-                                  <li><a href="#">Drop Down 4</a></li>
-                              </ul>
-                        </li>
+                      
                  <li><a class="nav-link scrollto text-warning" href="#contact"><strong>Contactanos</strong></a></li>
                  <li><partial name="_MenuPartial" /></li>
                  <li><partial name="_LoginPartial" /></li>
@@ -92,6 +76,28 @@
         <button class="btn btn-outline-secondary" type="submit">Buscar</button>
       </div>
     </div>
+  </div>
+   <br /> 
+  <div class="col-md-3">
+    <label>Estado de Mueble:</label>
+    <div class="input-group mb-3">
+     
+        <select class="form-control" name="searchEstado">
+      
+        <option value="nuevo">Nuevo</option>
+       <option value="usado" >Usado</option>
+        </select>
+
+         
+        <div class="input-group-append">
+
+
+        <button class="btn btn-outline-secondary" type="submit">Buscar</button> <br> 
+        
+      </div>
+      <a type="button" class="btn btn-success" asp-area="" asp-controller="Muebles" asp-action="Index">Ver Todos</a>
+    </div>
+    
   </div>
 }
 

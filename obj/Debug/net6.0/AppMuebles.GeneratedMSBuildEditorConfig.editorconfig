@@ -8,217 +8,217 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppMuebles
 build_property.RootNamespace = AppMuebles
-build_property.ProjectDir = C:\Users\ALEXANDRA\OneDrive\Escritorio\paginamueble\AppMuebles\
+build_property.ProjectDir = C:\Users\Diego\Videos\appmuebles_S3.0\AppMuebles\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ALEXANDRA\OneDrive\Escritorio\paginamueble\AppMuebles
+build_property.MSBuildProjectDirectory = C:\Users\Diego\Videos\appmuebles_S3.0\AppMuebles
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/admini/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/admini/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5pXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/Confirmacion.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/Confirmacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cQ29uZmlybWFjaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/Delete.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/Edit.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/Listar.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/ListarCorreo.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/ListarCorreo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyQ29ycmVvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Contacto/ListarNumero.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/ListarNumero.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyTnVtZXJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Home/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Home/Privacy.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Muebles/Details.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Muebles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Muebles/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Muebles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Muebles/logearse.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Muebles/logearse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xsb2dlYXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Muebles/Prueba.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Muebles/Prueba.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVlYmxlc1xQcnVlYmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Pago/Confirmacion.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Pago/Confirmacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDb25maXJtYWNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Pago/Create.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Pago/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Pago/Reportes.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Pago/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xSZXBvcnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Producto/Create.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Producto/Delete.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Producto/Details.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Producto/Edit.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Producto/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/Delete.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/Edit.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/Listar.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXExpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/ListarUsuario.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/ListarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXExpc3RhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Proformas/Prueba.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Prueba.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXFBydWViYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Shared/Error.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Shared/_MenuPartial.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Shared/_MenuPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Usuario/Index.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/_ViewImports.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/_ViewStart.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ALEXANDRA/OneDrive/Escritorio/paginamueble/AppMuebles/Views/Shared/_Layout.cshtml]
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-me8wd8g6zg

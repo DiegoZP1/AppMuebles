@@ -33,7 +33,7 @@ namespace AppMuebles.Controllers
 
             [HttpGet]
 
-         public async Task<IActionResult> Index(string? searchString )
+         public async Task<IActionResult> Index(string? searchString ,string? searchEstado )
 
         {
             
@@ -41,10 +41,16 @@ namespace AppMuebles.Controllers
             //SELECT * FROM t_productos -> &
             if(!String.IsNullOrEmpty(searchString)){
                 muebles = muebles.Where(s => s.Nombre.Contains(searchString)); //Algebra de bool
+                
                 // & + WHERE name like '%ABC%'
             }
 
-           
+           //SELECT * FROM t_productos -> &
+            if(!String.IsNullOrEmpty(searchEstado)){
+                muebles = muebles.Where(s => s.EstadoMue.Contains(searchEstado)); //Algebra de bool
+                
+                // & + WHERE name like '%ABC%'
+            }
 
             muebles = muebles.Where(s => s.Status.Contains("Activo"));
             
