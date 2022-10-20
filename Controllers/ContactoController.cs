@@ -145,7 +145,7 @@ namespace AppMuebles.Controllers
 
 
        
-        public async Task<IActionResult> Listar(string? searchString){
+        public async Task<IActionResult> Listar(string? searchString,string? searchEmail,string? searchNumero ,string? searchEstado){
 
             var conssultas = from o in _context.DataContacto select o;
            //SELECT * FROM t_productos -> &
@@ -154,40 +154,25 @@ namespace AppMuebles.Controllers
                 // & + WHERE name like '%ABC%'
             }
             
-            
-            return View(await conssultas.ToListAsync());
-
-
-    }
-
-        public async Task<IActionResult> ListarCorreo(string? searchEmail){
-
-            var conssultas = from o in _context.DataContacto select o;
-           //SELECT * FROM t_productos -> &
             if(!String.IsNullOrEmpty(searchEmail)){
                 conssultas = conssultas.Where(s => s.Email.Contains(searchEmail)); //Algebra de bool
                 // & + WHERE name like '%ABC%'
             }
             
-            
-            return View(await conssultas.ToListAsync());
-
-
-    }
-     public async Task<IActionResult> ListarNumero(string? searchEmail){
-
-            var conssultas = from o in _context.DataContacto select o;
-           //SELECT * FROM t_productos -> &
-            if(!String.IsNullOrEmpty(searchEmail)){
-                conssultas = conssultas.Where(s => s.Asunto.Contains(searchEmail)); //Algebra de bool
+            if(!String.IsNullOrEmpty(searchNumero)){
+                conssultas = conssultas.Where(s => s.Asunto.Contains(searchNumero)); //Algebra de bool
                 // & + WHERE name like '%ABC%'
             }
-            
-            
+            if(!String.IsNullOrEmpty(searchEstado)){
+                conssultas = conssultas.Where(s => s.Status.Contains(searchEstado)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+
             return View(await conssultas.ToListAsync());
 
 
     }
+
     
      private bool ContactoExists(int id)
         {

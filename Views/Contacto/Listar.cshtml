@@ -92,20 +92,49 @@
     </p>
     </form>
 <br>
- <form asp-controller="Contacto" asp-action="ListarCorreo">
+ <form asp-controller="Contacto" asp-action="Listar">
     <p>
         Email: <input type="text" name="searchEmail">
         <input type="submit" value="Filter">
     </p>
     </form>
 <br>
- <form asp-controller="Contacto" asp-action="ListarNumero">
+ <form asp-controller="Contacto" asp-action="Listar">
     <p>
-        Numero de Celular: <input type="text" name="searchEmail">
+        Asunto: <input type="text" name="searchNumero">
         <input type="submit" value="Filter">
     </p>
     </form>
 <br>
+
+
+
+<form asp-controller="Contacto" asp-action="Listar">
+    <div class="col-md-3">
+    <label>Estado de Contacto:</label>
+    <div class="input-group mb-3">
+     
+        <select class="form-control" name="searchEstado">
+      
+        <option value="Pendiente">Pendiente</option>
+       <option value="LEIDO" >Leido</option>
+       <option value="CONTESTADO" >Contestado</option>
+        </select>
+
+         
+        <div class="input-group-append">
+
+
+        <button class="btn btn-outline-secondary" type="submit">Buscar</button> <br> 
+        
+      </div>
+      <a type="button" class="btn btn-success" asp-area="" asp-controller="Contacto" asp-action="Listar">Ver Todos</a>
+    </div>
+    
+  </div>
+    </form>
+
+
 
 <table class="table">
     <thead>
@@ -156,7 +185,7 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a> 
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> 
+                
                 <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
             </td>
         </tr>
