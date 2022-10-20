@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Proformas\\DeleteLista.cshtml",
+      "TargetPath": "Views\\Proformas\\DeleteLista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Usuario\\Index.cshtml",
       "TargetPath": "Views\\Usuario\\Index.cshtml",
       "FileKind": "mvc"
@@ -16378,11 +16383,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Proformas\\ListarUsuario.cshtml",
-      "TargetPath": "Views\\Proformas\\ListarUsuario.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Pago\\Create.cshtml",
       "TargetPath": "Views\\Pago\\Create.cshtml",
       "FileKind": "mvc"
@@ -16415,11 +16415,6 @@
     {
       "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Producto\\Delete.cshtml",
       "TargetPath": "Views\\Producto\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Contacto\\ListarCorreo.cshtml",
-      "TargetPath": "Views\\Contacto\\ListarCorreo.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16470,11 +16465,6 @@
     {
       "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Muebles\\Prueba.cshtml",
       "TargetPath": "Views\\Muebles\\Prueba.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Diego\\Videos\\appmuebles_S3.0\\AppMuebles\\Views\\Contacto\\ListarNumero.cshtml",
-      "TargetPath": "Views\\Contacto\\ListarNumero.cshtml",
       "FileKind": "mvc"
     },
     {

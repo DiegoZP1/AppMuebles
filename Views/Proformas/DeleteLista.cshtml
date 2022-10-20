@@ -1,4 +1,6 @@
-@model IEnumerable<AppMuebles.Models.Contacto>
+
+@model AppMuebles.Models.Pago
+
 
 
 
@@ -85,70 +87,80 @@
             <div id="layoutSidenav_content">
 
 <br><br>
- <form asp-controller="Contacto" asp-action="Listar">
-    <p>
-        Nombre: <input type="text" name="searchString">
-        <input type="submit" value="Filter">
-    </p>
-    </form>
-<br>
- <form asp-controller="Contacto" asp-action="ListarCorreo">
-    <p>
-        Email: <input type="text" name="searchEmail">
-        <input type="submit" value="Filter">
-    </p>
-    </form>
-<br>
- <form asp-controller="Contacto" asp-action="ListarNumero">
-    <p>
-        Numero de Celular: <input type="text" name="searchEmail">
-        <input type="submit" value="Filter">
-    </p>
-    </form>
-<br>
+ 
 
+@{
+    ViewData["Title"] = "Delete";
+}
+<br>
+<br>
+<br>
+<br>
+<br>
+    <br>
+<h1>Eliminar</h1>
+
+<h3>Esta seguro que desea eliminar?</h3>
+<br>
+<div>
+
+    <hr />
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nombre)
+                ID COMPRA
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                USUARIO
             </th>
             <th>
-                Numero de celular
+                CORREO
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Mensaje)
+               MONTO TOTAL
+            </th>
+            <th>
+               FECHA DE COMPRA
             </th>
             
+            
         
-            <th></th>
+            
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
+
+         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
+                @Html.DisplayFor(model => model.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(model => model.NombreTarjeta)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Asunto)
+                @Html.DisplayFor(model => model.UserID)
+              
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Mensaje)
+                @Html.DisplayFor(model => model.MontoTotal)
             </td>
-            
+            <td>
+                @Html.DisplayFor(model => model.PaymentDate)
+            </td>
+            <td>
+                
+            </td>
         </tr>
-}
+
     </tbody>
 </table>
-
-
+    
+    <form asp-action="DeleteLista">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Listar" class="btn btn-info">Volver atras</a>
+    </form>
 
 
                 <footer class="py-4 bg-light mt-auto">

@@ -103,14 +103,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/ListarCorreo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyQ29ycmVvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Contacto/ListarNumero.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cTGlzdGFyTnVtZXJvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -171,6 +163,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/DeleteLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXERlbGV0ZUxpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -181,10 +177,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXExpc3Rhci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/ListarUsuario.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFzXExpc3RhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Diego/Videos/appmuebles_S3.0/AppMuebles/Views/Proformas/Prueba.cshtml]

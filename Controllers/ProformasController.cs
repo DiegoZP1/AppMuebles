@@ -153,33 +153,58 @@ namespace AppMuebles.Controllers
         }
 
 
-        public async Task<IActionResult> Listar(string? searchString)
+        public async Task<IActionResult> Listar(string? searchString ,string? searchCorreo)
         {
             
-            var muebles = from o in _context.DataProformas select o;
+            var muebles = from o in _context.DataPago select o;
             //SELECT * FROM t_productos -> &
             if(!String.IsNullOrEmpty(searchString)){
-                muebles = muebles.Where(s => s.Producto.Nombre.Contains(searchString)); //Algebra de bool
+                muebles = muebles.Where(s => s.NombreTarjeta.Contains(searchString)); //Algebra de bool
                 // & + WHERE name like '%ABC%'
             }
-            muebles = muebles.Where(s => s.Status.Contains("PROCESADO"));
-            
+           
+            if(!String.IsNullOrEmpty(searchCorreo)){
+                muebles = muebles.Where(s => s.UserID.Contains(searchCorreo)); //Algebra de bool
+                // & + WHERE name like '%ABC%'
+            }
+
             return View(await muebles.ToListAsync());
         }
 
-          public async Task<IActionResult> ListarUsuario(string? searchString)
+
+
+        
+//ELIMINAR
+
+           public async Task<IActionResult> DeleteLista(int? id)
         {
-            
-            var muebles = from o in _context.DataProformas select o;
-            //SELECT * FROM t_productos -> &
-            if(!String.IsNullOrEmpty(searchString)){
-                muebles = muebles.Where(s => s.UserID.Contains(searchString)); //Algebra de bool
-                // & + WHERE name like '%ABC%'
+            if (id == null)
+            {
+                return NotFound();
             }
-            muebles = muebles.Where(s => s.Status.Contains("PROCESADO"));
+
+            var produto = await _context.DataPago
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (produto == null)
+            {
+                return NotFound();
+            }
             
-            return View(await muebles.ToListAsync());
+
+            return View(produto);
         }
+
+ // POST: Produtos/Delete/5 
+        [HttpPost, ActionName("DeleteLista")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedLista(int id)
+        {
+            var producto = await _context.DataPago.FindAsync(id);
+            _context.DataPago.Remove(producto);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Listar));
+        }
+
 
 
         private bool ProformaExists(int id)

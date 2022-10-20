@@ -1,4 +1,4 @@
-@model IEnumerable<AppMuebles.Models.Proforma>
+@model IEnumerable<AppMuebles.Models.Pago>
 
 
 
@@ -88,14 +88,14 @@
 <br><br>
  <form asp-controller="Proformas" asp-action="Listar">
     <p>
-        Producto: <input type="text" name="searchString">
+        Nombre de Usuario: <input type="text" name="searchString">
         <input type="submit" value="Filter">
     </p>
     </form>
 <br>
- <form asp-controller="Proformas" asp-action="ListarUsuario">
+ <form asp-controller="Proformas" asp-action="Listar">
     <p>
-        Usuario: <input type="text" name="searchString">
+        Correo: <input type="text" name="searchCorreo">
         <input type="submit" value="Filter">
     </p>
     </form>
@@ -113,10 +113,13 @@
                 USUARIO
             </th>
             <th>
-               CANTIDAD
+                CORREO
             </th>
             <th>
-               PRODUCTO
+               MONTO TOTAL
+            </th>
+            <th>
+               FECHA DE COMPRA
             </th>
             
             
@@ -128,19 +131,22 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.id)
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreTarjeta)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UserID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Cantidad)
+                @Html.DisplayFor(modelItem => item.MontoTotal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Producto.marca)
+                @Html.DisplayFor(modelItem => item.PaymentDate)
             </td>
             <td>
-                
+                <a asp-action="DeleteLista" asp-route-id="@item.Id" class="btn btn-danger">Eliminar</a>
             </td>
         </tr>
 }
